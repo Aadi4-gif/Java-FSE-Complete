@@ -1,0 +1,5 @@
+# Java-FSE-Complete #
+
+This repository is a comprehensive representation of the 15 Technical Modules for the Cognizant FSE program. Showing a classified and productive solution on systems like DSA, PL/SQL, Spring Core/Spring Boot, Angular, Git VC, DevOps etc...
+
+This repository serves as a structured learning and development workspace for the Cognizant Full Stack Engineer (FSE) Digital Nurture Program. It contains solutions to exercises, coding challenges, and project implementations covering all 15 technical modules of the curriculum. The repository demonstrates practical application of key concepts across Data Structures and Algorithms (DSA), Java programming, PL/SQL, Spring Core, Spring Boot, Angular, Git Version Control, DevOps, and other full-stack development technologies. Each module is organized to showcase problem-solving approaches, best practices, and hands-on implementation, providing a comprehensive record of learning, skill development, and technical proficiency throughout the program.

@@ -1,0 +1,104 @@
+<div class="home-container">
+
+  <!-- HERO SECTION -->
+
+  <div class="hero-section">
+
+    <h1>{{ portalName }}</h1>
+
+    <p class="subtitle">
+      Welcome to the Student Course Portal
+    </p>
+
+    <button
+      class="enroll-btn"
+      [disabled]="!isPortalActive"
+      (click)="onEnrollClick()"
+    >
+      Enroll Now
+    </button>
+
+    <p class="message">
+      {{ message }}
+    </p>
+
+  </div>
+
+
+  <!-- STATS SECTION -->
+
+  <div class="stats-container">
+
+    <div class="stat-card">
+
+      <h2>{{ availableCourses }}</h2>
+
+      <p>Available Courses</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2>250+</h2>
+
+      <p>Students Enrolled</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2>15+</h2>
+
+      <p>Expert Trainers</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- SEARCH SECTION -->
+
+  <div class="search-section">
+
+    <h2>Search Courses</h2>
+
+    <input
+      type="text"
+      placeholder="Search by course name..."
+      [(ngModel)]="searchTerm"
+      class="search-input"
+    />
+
+    <p class="search-text" *ngIf="searchTerm">
+
+      Searching for:
+      <strong>{{ searchTerm }}</strong>
+
+    </p>
+
+  </div>
+
+
+  <!-- QUICK LINKS -->
+
+  <div class="quick-links">
+
+    <a routerLink="/courses">
+      View Courses
+    </a>
+
+    <a routerLink="/profile">
+      Student Profile
+    </a>
+
+    <a routerLink="/enroll">
+      Enrollment Form
+    </a>
+
+    <a routerLink="/enroll-reactive">
+      Reactive Form
+    </a>
+
+  </div>
+
+</div>

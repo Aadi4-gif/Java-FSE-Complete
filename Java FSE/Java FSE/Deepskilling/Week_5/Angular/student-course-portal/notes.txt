@@ -1,0 +1,17 @@
+TASK 1 FILE EXPLANATIONS:
+
+1. angular.json: Workspace configuration file that defines build targets, environments, asset pathways, and schematics defaults.
+2. tsconfig.json: The global TypeScript compiler configuration that controls baseline transpilation configurations.
+3. tsconfig.app.json: App-specific TypeScript configuration mapping compilation rules for source execution code (extends tsconfig.json).
+4. package.json: Application manifest managing version configurations, third-party node module dependencies, and custom scripts.
+5. src/main.ts: The structural runtime entry point that initializes and bootstraps the standalone application root layout.
+6. src/app/app.config.ts: Central app configurations workspace defining global injectables, routing configurations, and feature provisions.
+7. src/app/app.component.ts: Core TypeScript controller class driving structural layout views across the primary runtime.
+8. src/index.html: Single web shell application page providing target attachment parameters to render component elements.
+
+BUDGET CONFIGURATIONS ANALYSIS:
+
+Located in angular.json under: projects > student-course-portal > architect > build > configurations > production > budgets.
+
+- maximumWarning: Controls the cumulative bundle threshold size before the compiler flags a performance warning message during builds.
+- maximumError: Defines the absolute maximum bundle limit threshold; exceeding this hard stop aborts compilation to guard production performance.

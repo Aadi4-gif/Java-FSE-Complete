@@ -1,0 +1,10 @@
+<h2>Available Courses</h2>
+
+<div class="course-grid">
+
+  <app-course-card
+      *ngFor="let course of (courses$ | async)"
+      [course]="course">
+  </app-course-card>
+
+</div>

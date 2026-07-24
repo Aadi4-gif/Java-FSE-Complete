@@ -1,0 +1,22 @@
+.courses-layout {
+
+  padding: 30px;
+}
+
+.layout-header {
+
+  margin-bottom: 25px;
+}
+
+.layout-header h1 {
+
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.layout-header p {
+
+  color: #64748b;
+  font-size: 15px;
+}

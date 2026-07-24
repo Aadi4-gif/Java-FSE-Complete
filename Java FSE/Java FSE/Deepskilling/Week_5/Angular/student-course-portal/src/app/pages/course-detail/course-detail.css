@@ -1,0 +1,28 @@
+.detail-container {
+
+  padding: 30px;
+}
+
+.detail-container h1 {
+
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.detail-card {
+
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #dbe4ee;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+  max-width: 500px;
+}
+
+.detail-card p {
+
+  margin-bottom: 14px;
+  color: #334155;
+}

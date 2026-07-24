@@ -1,0 +1,75 @@
+<div
+  class="course-card"
+  appHighlight="#E3F2FD"
+  [ngClass]="cardClasses"
+  [ngStyle]="{ 'border-left-color': getBorderColor() }"
+  (click)="goToCourseDetail()"
+>
+
+  <div class="card-header">
+
+    <h3>{{ course.name }}</h3>
+
+    <div [ngSwitch]="course.gradeStatus">
+
+      <span *ngSwitchCase="'passed'" class="status passed">
+        Passed
+      </span>
+
+      <span *ngSwitchCase="'failed'" class="status failed">
+        Failed
+      </span>
+
+      <span *ngSwitchCase="'pending'" class="status pending">
+        Pending
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="course-info">
+
+    <p>
+      <strong>Course Code:</strong>
+      {{ course.code }}
+    </p>
+
+    <p>
+      <strong>Credits:</strong>
+      {{ course.credits | creditLabel }}
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button
+      class="details-btn"
+      (click)="toggleDetails(); $event.stopPropagation()"
+    >
+      {{ isExpanded ? 'Hide Details' : 'Show Details' }}
+    </button>
+
+    <button
+  class="enroll-btn"
+  (click)="toggleEnrollment(); $event.stopPropagation()"
+>
+  {{
+    (enrolledIds$ | async)?.includes(course.id)
+      ? 'Unenroll'
+      : 'Enroll'
+  }}
+</button>
+
+  </div>
+
+  <div *ngIf="isExpanded" class="details-section">
+
+    <p>
+      This course provides practical learning experience and helps strengthen technical skills.
+    </p>
+
+  </div>
+
+</div>
